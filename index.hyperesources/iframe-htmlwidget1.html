@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+          <style>
+            #contactform{
+             display: block;
+            margin-left: 250px;
+                 margin-top: 300px;
+            
+                 
+            }
+          
+          
+     input{
+    display:inline-block;
+    margin top; 50px;
+    width:320px;
+    height: 46px;
+    padding: 0.5em;
+    font-size: 16px;
+    
+}
+      .button submit, input[type=submit] {
+    -webkit-appearance: none;
+    font-size: 16px;
+    width:70px;
+    height: 46px;
+    border: none;
+    padding: 0.5em;
+    color: #fff;
+    background-color: orange;
+    transition: all 0.3s ease-out;
+
+    </style>  
+        
+        
+        
+	</head>
+
+	<body>
+<form id="contactform" method="POST">
+    
+    <input type="email" name="_replyto" placeholder="Your email address">
+    <input type="hidden" name="_subject" value="Website contact" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Send">
+</form>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'jason' + '@' + 'puzzleroomcornwall' + '.' + 'co' + '.' + 'uk');
+</script>
+	</body>
+</html>
